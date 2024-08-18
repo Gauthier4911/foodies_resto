@@ -1,0 +1,42 @@
+/*.qte{
+    background-color: red;text-align: center;color: white;border-radius: 50%;padding: 3px 10px;margin-top: 28px;
+}
+@media screen and (max-width: 993px) {
+
+    .dispa{
+        display: none;
+    }
+}*/
+
+
+@media screen and (max-width: 1400px) {
+
+    .fonction{
+        display: none;
+    }
+}
+.effet {
+    border-radius: 100%;
+    font-size: xx-large;
+    transition: all ease-in-out 0s;
+}
+.effet:hover{
+    border: yellow solid;
+    font-size: xx-large;
+}
+.schema {
+    background-image: url(/assets/menu/header_img.png);
+    background-size: cover;
+    height: 70vh;
+}
+
+.schema::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Couleur de l'overlay */
+    filter: brightness(50%);
+}
